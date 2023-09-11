@@ -1,0 +1,216 @@
+microservices-item-db-1   | 2023-09-11T04:36:47.995795088Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=71d473c3030f
+microservices-item-db-1   | 2023-09-11T04:36:47.995825213Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] db version v3.6.23
+microservices-item-db-1   | 2023-09-11T04:36:47.995827552Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+microservices-item-db-1   | 2023-09-11T04:36:47.995829117Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+microservices-item-db-1   | 2023-09-11T04:36:47.995830503Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+microservices-item-db-1   | 2023-09-11T04:36:47.995831795Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] modules: none
+microservices-item-db-1   | 2023-09-11T04:36:47.995833089Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] build environment:
+microservices-item-db-1   | 2023-09-11T04:36:47.995834377Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+microservices-item-db-1   | 2023-09-11T04:36:47.995835681Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten]     distarch: x86_64
+microservices-item-db-1   | 2023-09-11T04:36:47.995837000Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+microservices-item-db-1   | 2023-09-11T04:36:47.995838496Z 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+microservices-item-db-1   | 2023-09-11T04:36:47.995959126Z 2023-09-11T04:36:47.995+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+microservices-item-db-1   | 2023-09-11T04:36:47.995972317Z 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:47.995975642Z 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+microservices-item-db-1   | 2023-09-11T04:36:47.995978136Z 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+microservices-item-db-1   | 2023-09-11T04:36:47.995980914Z 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3384M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+microservices-item-db-1   | 2023-09-11T04:36:48.752032841Z 2023-09-11T04:36:48.751+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:751733][1:0x7ff8a30a9a40], txn-recover: Main recovery loop: starting at 1/22656
+microservices-item-db-1   | 2023-09-11T04:36:48.816624429Z 2023-09-11T04:36:48.816+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:816281][1:0x7ff8a30a9a40], txn-recover: Recovering log 1 through 2
+microservices-item-db-1   | 2023-09-11T04:36:48.867386003Z 2023-09-11T04:36:48.866+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:866507][1:0x7ff8a30a9a40], txn-recover: Recovering log 2 through 2
+microservices-item-db-1   | 2023-09-11T04:36:48.906313518Z 2023-09-11T04:36:48.905+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:905953][1:0x7ff8a30a9a40], txn-recover: Set global recovery timestamp: 0
+microservices-item-app-1  | 2023-09-11T04:36:48.491651272Z 
+microservices-item-app-1  | 2023-09-11T04:36:48.491692245Z > docker-software-delivery@1.0.0 start /app
+microservices-item-app-1  | 2023-09-11T04:36:48.491695379Z > node ./bin/www
+microservices-item-db-1   | 2023-09-11T04:36:48.945270447Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.945288370Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+microservices-item-db-1   | 2023-09-11T04:36:48.945297229Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+microservices-item-app-1  | 2023-09-11T04:36:48.491697147Z 
+microservices-item-app-1  | 2023-09-11T04:36:48.653313964Z NODE_ENV: production
+microservices-item-app-1  | 2023-09-11T04:36:48.684927667Z /app/node_modules/mongodb/lib/mongo_client.js:421
+microservices-item-app-1  | 2023-09-11T04:36:48.685040478Z           throw err
+microservices-item-app-1  | 2023-09-11T04:36:48.685046326Z           ^
+microservices-item-app-1  | 2023-09-11T04:36:48.685048622Z 
+microservices-item-app-1  | 2023-09-11T04:36:48.685050808Z AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.20.0.2:27017
+microservices-item-app-1  | 2023-09-11T04:36:48.685093218Z     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+microservices-item-app-1  | 2023-09-11T04:36:48.685103932Z   name: 'MongoError'
+microservices-item-app-1  | 2023-09-11T04:36:48.685105896Z }]
+microservices-item-app-1  | 2023-09-11T04:36:48.685107403Z     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+microservices-item-app-1  | 2023-09-11T04:36:48.685109463Z     at Pool.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:36:48.685110933Z     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+microservices-item-app-1  | 2023-09-11T04:36:48.685112564Z     at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  | 2023-09-11T04:36:48.685113978Z     at Connection.emit (e...
+microservices-item-app-1  | 2023-09-11T04:36:48.685115447Z     at /app/app.js:24:10
+microservices-item-app-1  | 2023-09-11T04:36:48.685116797Z     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+microservices-item-app-1  | 2023-09-11T04:36:48.685118248Z     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+microservices-item-app-1  | 2023-09-11T04:36:48.685119670Z     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+microservices-item-app-1  | 2023-09-11T04:36:48.685121174Z   generatedMessage: true,
+microservices-item-app-1  | 2023-09-11T04:36:48.685122523Z   code: 'ERR_ASSERTION',
+microservices-item-app-1  | 2023-09-11T04:36:48.685123839Z   actual: null,
+microservices-item-app-1  | 2023-09-11T04:36:48.685125252Z   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.20.0.2:27017
+microservices-item-app-1  | 2023-09-11T04:36:48.685126839Z       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+microservices-item-app-1  | 2023-09-11T04:36:48.685128280Z     name: 'MongoError'
+microservices-item-app-1  | 2023-09-11T04:36:48.685129626Z   }]
+microservices-item-app-1  | 2023-09-11T04:36:48.685130964Z       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+microservices-item-app-1  | 2023-09-11T04:36:48.685132522Z       at Pool.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:36:48.685134988Z       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+microservices-item-app-1  | 2023-09-11T04:36:48.685145119Z       at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  | 2023-09-11T04:36:48.685146458Z       at Connection.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:36:48.685147768Z       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+microservices-item-app-1  | 2023-09-11T04:36:48.685159311Z       at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  | 2023-09-11T04:36:48.685160845Z       at Socket.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:36:48.685162259Z       at emitErrorNT (internal/streams/destroy.js:106:8)
+microservices-item-app-1  | 2023-09-11T04:36:48.685163682Z       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+microservices-item-app-1  | 2023-09-11T04:36:48.685165140Z   operator: '=='
+microservices-item-app-1  | 2023-09-11T04:36:48.685166515Z }
+microservices-item-app-1  | 2023-09-11T04:36:48.692755516Z npm ERR! code ELIFECYCLE
+microservices-item-app-1  | 2023-09-11T04:36:48.692786277Z npm ERR! errno 1
+microservices-item-app-1  | 2023-09-11T04:36:48.694523375Z npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+microservices-item-app-1  | 2023-09-11T04:36:48.694548963Z npm ERR! Exit status 1
+microservices-item-app-1  | 2023-09-11T04:36:48.694550781Z npm ERR! 
+microservices-item-app-1  | 2023-09-11T04:36:48.694552184Z npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+microservices-item-app-1  | 2023-09-11T04:36:48.694553568Z npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+microservices-item-app-1  | 2023-09-11T04:36:48.703923662Z 
+microservices-item-app-1  | 2023-09-11T04:36:48.703960872Z npm ERR! A complete log of this run can be found in:
+microservices-item-db-1   | 2023-09-11T04:36:48.945298918Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.945300212Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.945301462Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+microservices-item-db-1   | 2023-09-11T04:36:48.945302824Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+microservices-item-db-1   | 2023-09-11T04:36:48.945525212Z 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.947793639Z 2023-09-11T04:36:48.947+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+microservices-item-db-1   | 2023-09-11T04:36:48.948315814Z 2023-09-11T04:36:48.948+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+microservices-item-db-1   | 2023-09-11T04:36:48.948466644Z 2023-09-11T04:36:48.948+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+microservices-item-db-1   | 2023-09-11T04:36:48.948478217Z 2023-09-11T04:36:48.948+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+microservices-item-db-1   | 2023-09-11T04:36:49.918200125Z 2023-09-11T04:36:49.917+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:35890 #1 (1 connection now open)
+microservices-item-db-1   | 2023-09-11T04:36:49.921876703Z 2023-09-11T04:36:49.921+0000 I NETWORK  [conn1] received client metadata from 172.20.0.3:35890 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+microservices-item-db-1   | 2023-09-11T04:36:59.969737796Z 2023-09-11T04:36:59.969+0000 I STORAGE  [conn1] createCollection: accumulator.documents with generated UUID: 221a8d6c-e53c-4234-b0df-a28459a3bac5
+microservices-item-db-1   | 2023-09-11T04:39:45.837656314Z 2023-09-11T04:39:45.837+0000 I NETWORK  [conn1] end connection 172.20.0.3:35890 (0 connections now open)
+microservices-item-db-1   | 2023-09-11T04:39:46.301451089Z 2023-09-11T04:39:46.301+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+microservices-item-db-1   | 2023-09-11T04:39:46.301542447Z 2023-09-11T04:39:46.301+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+microservices-item-db-1   | 2023-09-11T04:39:46.301709780Z 2023-09-11T04:39:46.301+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+microservices-item-db-1   | 2023-09-11T04:39:46.302155490Z 2023-09-11T04:39:46.301+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+microservices-item-db-1   | 2023-09-11T04:39:46.304153425Z 2023-09-11T04:39:46.303+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+microservices-item-db-1   | 2023-09-11T04:39:46.366811971Z 2023-09-11T04:39:46.366+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+microservices-item-db-1   | 2023-09-11T04:39:46.366829071Z 2023-09-11T04:39:46.366+0000 I CONTROL  [signalProcessingThread] now exiting
+microservices-item-db-1   | 2023-09-11T04:39:46.366830831Z 2023-09-11T04:39:46.366+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+microservices-item-db-1   | 2023-09-11T04:42:25.782170049Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=71d473c3030f
+microservices-item-db-1   | 2023-09-11T04:42:25.782218090Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] db version v3.6.23
+microservices-item-db-1   | 2023-09-11T04:42:25.782222215Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+microservices-item-db-1   | 2023-09-11T04:42:25.782225151Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+microservices-item-db-1   | 2023-09-11T04:42:25.782228102Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+microservices-item-db-1   | 2023-09-11T04:42:25.782230542Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] modules: none
+microservices-item-db-1   | 2023-09-11T04:42:25.782237462Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] build environment:
+microservices-item-db-1   | 2023-09-11T04:42:25.782239528Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+microservices-item-db-1   | 2023-09-11T04:42:25.782241729Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten]     distarch: x86_64
+microservices-item-db-1   | 2023-09-11T04:42:25.782243883Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+microservices-item-db-1   | 2023-09-11T04:42:25.782245999Z 2023-09-11T04:42:25.781+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+microservices-item-app-1  | 2023-09-11T04:36:48.703965615Z npm ERR!     /root/.npm/_logs/2023-09-11T04_36_48_694Z-debug.log
+microservices-item-app-1  | 2023-09-11T04:36:49.746799775Z 
+microservices-item-app-1  | 2023-09-11T04:36:49.746840570Z > docker-software-delivery@1.0.0 start /app
+microservices-item-app-1  | 2023-09-11T04:36:49.746843017Z > node ./bin/www
+microservices-item-app-1  | 2023-09-11T04:36:49.746844557Z 
+microservices-item-app-1  | 2023-09-11T04:36:49.902090548Z NODE_ENV: production
+microservices-item-app-1  | 2023-09-11T04:36:49.926265528Z Connected to database
+microservices-item-app-1  | 2023-09-11T04:36:55.172553838Z [0mGET / [32m200 [0m128.537 ms - 785[0m
+microservices-item-app-1  | 2023-09-11T04:36:55.315352979Z [0mGET /javascripts/dist/dist.min.js [32m200 [0m5.279 ms - 186999[0m
+microservices-item-app-1  | 2023-09-11T04:36:55.316508127Z [0mGET /stylesheets/style.css [32m200 [0m25.454 ms - 519[0m
+microservices-item-app-1  | 2023-09-11T04:36:55.514578949Z [0mGET /api [32m200 [0m6.040 ms - 2[0m
+microservices-item-app-1  | 2023-09-11T04:36:59.993010541Z [0mPOST /api [32m201 [0m30.482 ms - 53[0m
+microservices-item-app-1  | 2023-09-11T04:37:02.645646128Z [0mPOST /api [32m201 [0m2.231 ms - 53[0m
+microservices-item-app-1  | 2023-09-11T04:37:05.637909722Z [0mPOST /api [32m201 [0m2.301 ms - 55[0m
+microservices-item-app-1  | 2023-09-11T04:37:07.545726624Z [0mPOST /api [32m201 [0m1.821 ms - 54[0m
+microservices-item-app-1  | 2023-09-11T04:39:11.061343843Z [0mGET / [36m304 [0m1.676 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:11.134006364Z [0mGET /stylesheets/style.css [36m304 [0m1.674 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:11.137826517Z [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.646 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:11.202626079Z [0mGET /api [32m200 [0m2.598 ms - 220[0m
+microservices-item-app-1  | 2023-09-11T04:39:12.124755655Z [0mGET / [36m304 [0m0.544 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:12.188529183Z [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.365 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:12.189719250Z [0mGET /stylesheets/style.css [36m304 [0m1.701 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:12.255915789Z [0mGET /api [36m304 [0m2.355 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:19.308492819Z [0mGET / [36m304 [0m0.689 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:19.384299882Z [0mGET /stylesheets/style.css [36m304 [0m1.381 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:19.388443706Z [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.781 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:39:19.458900454Z [0mGET /api [36m304 [0m3.084 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:42:26.328958424Z 
+microservices-item-app-1  | 2023-09-11T04:42:26.328991468Z > docker-software-delivery@1.0.0 start /app
+microservices-item-app-1  | 2023-09-11T04:42:26.328994078Z > node ./bin/www
+microservices-item-app-1  | 2023-09-11T04:42:26.328995498Z 
+microservices-item-app-1  | 2023-09-11T04:42:26.508648837Z NODE_ENV: production
+microservices-item-app-1  | 2023-09-11T04:42:26.532397377Z /app/node_modules/mongodb/lib/mongo_client.js:421
+microservices-item-app-1  | 2023-09-11T04:42:26.532432607Z           throw err
+microservices-item-app-1  | 2023-09-11T04:42:26.532434388Z           ^
+microservices-item-app-1  | 2023-09-11T04:42:26.532435714Z 
+microservices-item-app-1  | 2023-09-11T04:42:26.532436979Z AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.20.0.2:27017
+microservices-item-app-1  | 2023-09-11T04:42:26.532438433Z     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+microservices-item-app-1  | 2023-09-11T04:42:26.532439949Z   name: 'MongoError'
+microservices-item-app-1  | 2023-09-11T04:42:26.532441128Z }]
+microservices-item-app-1  | 2023-09-11T04:42:26.532442260Z     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+microservices-item-app-1  | 2023-09-11T04:42:26.532443799Z     at Pool.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:42:26.532445027Z     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+microservices-item-app-1  | 2023-09-11T04:42:26.532446706Z     at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  | 2023-09-11T04:42:26.532447949Z     at Connection.emit (e...
+microservices-item-app-1  | 2023-09-11T04:42:26.532449130Z     at /app/app.js:24:10
+microservices-item-app-1  | 2023-09-11T04:42:26.532450385Z     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+microservices-item-app-1  | 2023-09-11T04:42:26.532451646Z     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+microservices-item-app-1  | 2023-09-11T04:42:26.532452855Z     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+microservices-item-app-1  | 2023-09-11T04:42:26.532454078Z   generatedMessage: true,
+microservices-item-app-1  | 2023-09-11T04:42:26.532455245Z   code: 'ERR_ASSERTION',
+microservices-item-app-1  | 2023-09-11T04:42:26.532456405Z   actual: null,
+microservices-item-app-1  | 2023-09-11T04:42:26.532457596Z   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.20.0.2:27017
+microservices-item-app-1  | 2023-09-11T04:42:26.532468184Z       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+microservices-item-app-1  | 2023-09-11T04:42:26.532469577Z     name: 'MongoError'
+microservices-item-app-1  | 2023-09-11T04:42:26.532470736Z   }]
+microservices-item-app-1  | 2023-09-11T04:42:26.532471865Z       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+microservices-item-app-1  | 2023-09-11T04:42:26.532473189Z       at Pool.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:42:26.532474345Z       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+microservices-item-app-1  | 2023-09-11T04:42:26.532475623Z       at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  | 2023-09-11T04:42:26.532476794Z       at Connection.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:42:26.532477963Z       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+microservices-item-app-1  | 2023-09-11T04:42:26.532479277Z       at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  | 2023-09-11T04:42:26.532480429Z       at Socket.emit (events.js:400:28)
+microservices-item-app-1  | 2023-09-11T04:42:26.532481593Z       at emitErrorNT (internal/streams/destroy.js:106:8)
+microservices-item-app-1  | 2023-09-11T04:42:26.532482767Z       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+microservices-item-app-1  | 2023-09-11T04:42:26.532483965Z   operator: '=='
+microservices-item-app-1  | 2023-09-11T04:42:26.532485115Z }
+microservices-item-app-1  | 2023-09-11T04:42:26.538304667Z npm ERR! code ELIFECYCLE
+microservices-item-app-1  | 2023-09-11T04:42:26.538339015Z npm ERR! errno 1
+microservices-item-app-1  | 2023-09-11T04:42:26.541361600Z npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+microservices-item-app-1  | 2023-09-11T04:42:26.541421736Z npm ERR! Exit status 1
+microservices-item-app-1  | 2023-09-11T04:42:26.541431816Z npm ERR! 
+microservices-item-app-1  | 2023-09-11T04:42:26.541436102Z npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+microservices-item-app-1  | 2023-09-11T04:42:26.541438824Z npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+microservices-item-app-1  | 2023-09-11T04:42:26.548222888Z 
+microservices-item-app-1  | 2023-09-11T04:42:26.548254327Z npm ERR! A complete log of this run can be found in:
+microservices-item-app-1  | 2023-09-11T04:42:26.548257454Z npm ERR!     /root/.npm/_logs/2023-09-11T04_42_26_541Z-debug.log
+microservices-item-db-1   | 2023-09-11T04:42:25.782427809Z 2023-09-11T04:42:25.782+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+microservices-item-db-1   | 2023-09-11T04:42:25.782443638Z 2023-09-11T04:42:25.782+0000 I STORAGE  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:42:25.782447296Z 2023-09-11T04:42:25.782+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+microservices-item-db-1   | 2023-09-11T04:42:25.782449855Z 2023-09-11T04:42:25.782+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+microservices-item-db-1   | 2023-09-11T04:42:25.782539130Z 2023-09-11T04:42:25.782+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3384M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+microservices-item-db-1   | 2023-09-11T04:42:26.520832259Z 2023-09-11T04:42:26.520+0000 I STORAGE  [initandlisten] WiredTiger message [1694407346:520359][1:0x7fa125e43a40], txn-recover: Main recovery loop: starting at 2/10240
+microservices-item-db-1   | 2023-09-11T04:42:26.594934274Z 2023-09-11T04:42:26.594+0000 I STORAGE  [initandlisten] WiredTiger message [1694407346:594627][1:0x7fa125e43a40], txn-recover: Recovering log 2 through 3
+microservices-item-db-1   | 2023-09-11T04:42:26.632230403Z 2023-09-11T04:42:26.632+0000 I STORAGE  [initandlisten] WiredTiger message [1694407346:632018][1:0x7fa125e43a40], txn-recover: Recovering log 3 through 3
+microservices-item-db-1   | 2023-09-11T04:42:26.668447031Z 2023-09-11T04:42:26.668+0000 I STORAGE  [initandlisten] WiredTiger message [1694407346:668159][1:0x7fa125e43a40], txn-recover: Set global recovery timestamp: 0
+microservices-item-db-1   | 2023-09-11T04:42:26.711840454Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:42:26.711893669Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+microservices-item-db-1   | 2023-09-11T04:42:26.711900022Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+microservices-item-db-1   | 2023-09-11T04:42:26.711902847Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:42:26.711905218Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:42:26.712002640Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+microservices-item-db-1   | 2023-09-11T04:42:26.712028666Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+microservices-item-db-1   | 2023-09-11T04:42:26.712032433Z 2023-09-11T04:42:26.711+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:42:26.716060872Z 2023-09-11T04:42:26.715+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+microservices-item-db-1   | 2023-09-11T04:42:26.716904949Z 2023-09-11T04:42:26.716+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+microservices-item-db-1   | 2023-09-11T04:42:26.716927171Z 2023-09-11T04:42:26.716+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+microservices-item-db-1   | 2023-09-11T04:42:26.716930463Z 2023-09-11T04:42:26.716+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+microservices-item-db-1   | 2023-09-11T04:42:27.853731762Z 2023-09-11T04:42:27.853+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:48386 #1 (1 connection now open)
+microservices-item-db-1   | 2023-09-11T04:42:27.858180661Z 2023-09-11T04:42:27.857+0000 I NETWORK  [conn1] received client metadata from 172.20.0.3:48386 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+microservices-item-app-1  | 2023-09-11T04:42:27.686930837Z 
+microservices-item-app-1  | 2023-09-11T04:42:27.686974885Z > docker-software-delivery@1.0.0 start /app
+microservices-item-app-1  | 2023-09-11T04:42:27.686977286Z > node ./bin/www
+microservices-item-app-1  | 2023-09-11T04:42:27.686978761Z 
+microservices-item-app-1  | 2023-09-11T04:42:27.832127775Z NODE_ENV: production
+microservices-item-app-1  | 2023-09-11T04:42:27.860648955Z Connected to database
+microservices-item-app-1  | 2023-09-11T04:42:33.806735997Z [0mGET / [36m304 [0m105.777 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:42:33.922763619Z [0mGET /javascripts/dist/dist.min.js [36m304 [0m1.067 ms - -[0m
+microservices-item-app-1  | 2023-09-11T04:42:33.926875516Z [0mGET /stylesheets/style.css [32m200 [0m20.619 ms - 519[0m
+microservices-item-app-1  | 2023-09-11T04:42:34.084702703Z [0mGET /api [36m304 [0m8.362 ms - -[0m

@@ -1,0 +1,130 @@
+[+] Running 3/2
+ ✔ Network microservices_default       Created                                                                    0.1s 
+ ✔ Container microservices-item-db-1   Created                                                                    0.1s 
+ ✔ Container microservices-item-app-1  Created                                                                    0.0s 
+Attaching to microservices-item-app-1, microservices-item-db-1
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=71d473c3030f
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] db version v3.6.23
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] modules: none
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] build environment:
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten]     distarch: x86_64
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+microservices-item-db-1   | 2023-09-11T04:36:47.995+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3384M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+microservices-item-app-1  | 
+microservices-item-app-1  | > docker-software-delivery@1.0.0 start /app
+microservices-item-app-1  | > node ./bin/www
+microservices-item-app-1  | 
+microservices-item-app-1  | NODE_ENV: production
+microservices-item-app-1  | /app/node_modules/mongodb/lib/mongo_client.js:421
+microservices-item-app-1  |           throw err
+microservices-item-app-1  |           ^
+microservices-item-app-1  | 
+microservices-item-app-1  | AssertionError [ERR_ASSERTION]: null == Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.20.0.2:27017
+microservices-item-app-1  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+microservices-item-app-1  |   name: 'MongoError'
+microservices-item-app-1  | }]
+microservices-item-app-1  |     at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+microservices-item-app-1  |     at Pool.emit (events.js:400:28)
+microservices-item-app-1  |     at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+microservices-item-app-1  |     at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  |     at Connection.emit (e...
+microservices-item-app-1  |     at /app/app.js:24:10
+microservices-item-app-1  |     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:527:5)
+microservices-item-app-1  |     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+microservices-item-app-1  |     at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+microservices-item-app-1  |   generatedMessage: true,
+microservices-item-app-1  |   code: 'ERR_ASSERTION',
+microservices-item-app-1  |   actual: null,
+microservices-item-app-1  |   expected: Error [MongoError]: failed to connect to server [item-db:27017] on first connect [Error: connect ECONNREFUSED 172.20.0.2:27017
+microservices-item-app-1  |       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16) {
+microservices-item-app-1  |     name: 'MongoError'
+microservices-item-app-1  |   }]
+microservices-item-app-1  |       at Pool.<anonymous> (/app/node_modules/mongodb-core/lib/topologies/server.js:336:35)
+microservices-item-app-1  |       at Pool.emit (events.js:400:28)
+microservices-item-app-1  |       at Connection.<anonymous> (/app/node_modules/mongodb-core/lib/connection/pool.js:280:12)
+microservices-item-app-1  |       at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  |       at Connection.emit (events.js:400:28)
+microservices-item-app-1  |       at Socket.<anonymous> (/app/node_modules/mongodb-core/lib/connection/connection.js:189:49)
+microservices-item-app-1  |       at Object.onceWrapper (events.js:520:26)
+microservices-item-app-1  |       at Socket.emit (events.js:400:28)
+microservices-item-app-1  |       at emitErrorNT (internal/streams/destroy.js:106:8)
+microservices-item-app-1  |       at emitErrorCloseNT (internal/streams/destroy.js:74:3),
+microservices-item-app-1  |   operator: '=='
+microservices-item-app-1  | }
+microservices-item-app-1  | npm ERR! code ELIFECYCLE
+microservices-item-app-1  | npm ERR! errno 1
+microservices-item-app-1  | npm ERR! docker-software-delivery@1.0.0 start: `node ./bin/www`
+microservices-item-app-1  | npm ERR! Exit status 1
+microservices-item-app-1  | npm ERR! 
+microservices-item-app-1  | npm ERR! Failed at the docker-software-delivery@1.0.0 start script.
+microservices-item-app-1  | npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+microservices-item-app-1  | 
+microservices-item-app-1  | npm ERR! A complete log of this run can be found in:
+microservices-item-app-1  | npm ERR!     /root/.npm/_logs/2023-09-11T04_36_48_694Z-debug.log
+microservices-item-db-1   | 2023-09-11T04:36:48.751+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:751733][1:0x7ff8a30a9a40], txn-recover: Main recovery loop: starting at 1/22656
+microservices-item-db-1   | 2023-09-11T04:36:48.816+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:816281][1:0x7ff8a30a9a40], txn-recover: Recovering log 1 through 2
+microservices-item-db-1   | 2023-09-11T04:36:48.866+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:866507][1:0x7ff8a30a9a40], txn-recover: Recovering log 2 through 2
+microservices-item-db-1   | 2023-09-11T04:36:48.905+0000 I STORAGE  [initandlisten] WiredTiger message [1694407008:905953][1:0x7ff8a30a9a40], txn-recover: Set global recovery timestamp: 0
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+microservices-item-db-1   | 2023-09-11T04:36:48.945+0000 I CONTROL  [initandlisten] 
+microservices-item-db-1   | 2023-09-11T04:36:48.947+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+microservices-item-db-1   | 2023-09-11T04:36:48.948+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+microservices-item-db-1   | 2023-09-11T04:36:48.948+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+microservices-item-db-1   | 2023-09-11T04:36:48.948+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+microservices-item-app-1 exited with code 0
+microservices-item-app-1  | 
+microservices-item-app-1  | > docker-software-delivery@1.0.0 start /app
+microservices-item-app-1  | > node ./bin/www
+microservices-item-app-1  | 
+microservices-item-app-1  | NODE_ENV: production
+microservices-item-db-1   | 2023-09-11T04:36:49.917+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:35890 #1 (1 connection now open)
+microservices-item-db-1   | 2023-09-11T04:36:49.921+0000 I NETWORK  [conn1] received client metadata from 172.20.0.3:35890 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.15.90.1-microsoft-standard-WSL2" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+microservices-item-app-1  | Connected to database
+microservices-item-app-1  | GET / 200 128.537 ms - 785
+microservices-item-app-1  | GET /javascripts/dist/dist.min.js 200 5.279 ms - 186999
+microservices-item-app-1  | GET /stylesheets/style.css 200 25.454 ms - 519
+microservices-item-app-1  | GET /api 200 6.040 ms - 2
+microservices-item-db-1   | 2023-09-11T04:36:59.969+0000 I STORAGE  [conn1] createCollection: accumulator.documents with generated UUID: 221a8d6c-e53c-4234-b0df-a28459a3bac5
+microservices-item-app-1  | POST /api 201 30.482 ms - 53
+microservices-item-app-1  | POST /api 201 2.231 ms - 53
+microservices-item-app-1  | POST /api 201 2.301 ms - 55
+microservices-item-app-1  | POST /api 201 1.821 ms - 54
+microservices-item-app-1  | GET / 304 1.676 ms - -
+microservices-item-app-1  | GET /stylesheets/style.css 304 1.674 ms - -
+microservices-item-app-1  | GET /javascripts/dist/dist.min.js 304 0.646 ms - -
+microservices-item-app-1  | GET /api 200 2.598 ms - 220
+microservices-item-app-1  | GET / 304 0.544 ms - -
+microservices-item-app-1  | GET /javascripts/dist/dist.min.js 304 0.365 ms - -
+microservices-item-app-1  | GET /stylesheets/style.css 304 1.701 ms - -
+microservices-item-app-1  | GET /api 304 2.355 ms - -
+microservices-item-app-1  | GET / 304 0.689 ms - -
+microservices-item-app-1  | GET /stylesheets/style.css 304 1.381 ms - -
+microservices-item-app-1  | GET /javascripts/dist/dist.min.js 304 0.781 ms - -
+microservices-item-app-1  | GET /api 304 3.084 ms - -
+microservices-item-db-1   | 2023-09-11T04:39:45.837+0000 I NETWORK  [conn1] end connection 172.20.0.3:35890 (0 connections now open)
+microservices-item-app-1 exited with code 0
+microservices-item-app-1 exited with code 137
+microservices-item-db-1   | 2023-09-11T04:39:46.301+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+microservices-item-db-1   | 2023-09-11T04:39:46.301+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+microservices-item-db-1   | 2023-09-11T04:39:46.301+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+microservices-item-db-1   | 2023-09-11T04:39:46.301+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+microservices-item-db-1   | 2023-09-11T04:39:46.303+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+microservices-item-db-1   | 2023-09-11T04:39:46.366+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+microservices-item-db-1   | 2023-09-11T04:39:46.366+0000 I CONTROL  [signalProcessingThread] now exiting
+microservices-item-db-1   | 2023-09-11T04:39:46.366+0000 I CONTROL  [signalProcessingThread] shutting down with code:0
+microservices-item-db-1 exited with code 0

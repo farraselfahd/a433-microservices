@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+    item-app: # app service
+        image: ghcr.io/farraselfahd/item-app:v1 # using image from Github Container Registry
+        environment: # env variables
+            NODE_ENV: production
+            DB_HOST: item-db
+        working_dir: /app
+        command: sh -c "npm start" # start the app
+        ports: # mapping container port to host port
+            - 80:8080
+        depends_on: # database will be started first before the app
+            - item-db
+        restart: always # restart policy
+
+    item-db: # database service
+        image: mongo:3 # using mongodb image from docker hub
+        volumes: # attach volume
+            - app-db:/data/db
+        restart: always # restart policy
+
+volumes: # volume for database
+    app-db:
