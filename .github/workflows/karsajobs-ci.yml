@@ -1,0 +1,51 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: karsajobs-ci
+
+on:
+    push:
+        branches:
+            - karsajobs
+    workflow_dispatch:
+    pull_request:
+
+jobs:
+
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.15'
+        
+    - name: lint-dockerfile
+      run: |
+        apt update && apt install hadolint
+        hadolint Dockerfile
+
+    - name: test-app
+      run: go test -v -short --count=1 $(go list ./...)
+
+    - name: build-app-karsajobs
+      # You may pin to the exact commit or the version.
+      # uses: GlueOps/github-actions-build-push-containers@4ae580f710f614ccba941103be98dc97db6599b3
+      uses: GlueOps/github-actions-build-push-containers@v0.1.3
+      with:
+        # Personal Access Token (PAT) used to authenticate with the GitHub Container Registry.
+        github_token: ${{ github.token }}
+        # Docker image is named after repository
+        image_name: karsajobs
+        # path to the Dockerfile
+        dockerfile-path: Dockerfile
+        # A path to the context in which the build will happen, see https://docs.docker.com/engine/reference/commandline/build/
+        #context: # optional, default is .
+        # The container registry to push the image to
+        registry: ghcr.io
+        # The username for authentication to the container registry (defaults to the github.actor)
+        #registry-username: # optional
+        # The tags to assign to the Docker image
+        #tags: # optional
