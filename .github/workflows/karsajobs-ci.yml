@@ -24,7 +24,7 @@ jobs:
         
     - name: lint-dockerfile
       run: |
-        apt update && apt install hadolint
+        sudo apt update && sudo apt install hadolint
         hadolint Dockerfile
 
     - name: test-app
