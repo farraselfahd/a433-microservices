@@ -24,9 +24,12 @@ jobs:
         
     - name: lint-dockerfile
       run: |
-        sudo apt update && sudo apt install hadolint
+        sudo apt update && sudo apt install shellcheck -y
+        wget https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64
+        sudo mv hadolint-Linux-x86_64 /usr/local/bin/hadolint
+        sudo chmod u+x /usr/local/bin/hadolint
         hadolint Dockerfile
-
+        
     - name: test-app
       run: go test -v -short --count=1 $(go list ./...)
 
