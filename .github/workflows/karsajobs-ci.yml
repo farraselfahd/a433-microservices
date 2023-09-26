@@ -41,7 +41,7 @@ jobs:
         # Your secrets.GITHUB_TOKEN
         github_token: ${{ github.token }}
         # Image name, e.g. my-user-name/my-repo (will be lowercased)
-        image_name: karsajobs
+        image_name: farraselfahd/karsajobs
         # A path to the Dockerfile (if it's not in the repository's root directory)
         dockerfile: ./Dockerfile
         # A path to the context in which the build will happen, see https://docs.docker.com/engine/reference/commandline/build/
