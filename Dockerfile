@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:18-alpine
 
 # environment variables
 ENV NODE_ENV=production
