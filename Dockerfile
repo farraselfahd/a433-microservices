@@ -2,7 +2,7 @@ FROM node:lts-alpine
 
 # environment variables
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=3002
 
 WORKDIR /usr/src/app
 
